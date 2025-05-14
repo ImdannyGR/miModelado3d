@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo 3D Interactivo</title>
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <style>
+    body {
+      background-color: #121212;
+      font-family: Arial, sans-serif;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 40px;
+    }
+
+    model-viewer {
+      width: 80%;
+      max-width: 600px;
+      height: 400px;
+      margin: 20px auto;
+    }
+  </style>
+</head>
+<body>
+    <h1>Immersive  Aguachica</h1>
+
+  <!-- Primer modelo: Parque Morrocoy -->
+  <h2>Parque San Roque</h2>
+  <model-viewer 
+    src="models/iglesia_sanroque.glb" 
+    alt="Modelo 3D del Parque Morrocoy"
+    auto-rotate 
+    camera-controls 
+    shadow-intensity="1"
+    background-color="#202020">
+  </model-viewer>
+
+  <!-- Segundo modelo: Tortuga -->
+  <h2>Tortuga del parque  morrocoy</h2>
+  <model-viewer 
+    src="models/tortuga.glb" 
+    alt="Modelo 3D de una tortuga"
+    auto-rotate 
+    camera-controls 
+    shadow-intensity="1"
+    background-color="#202020">
+  </model-viewer>
+
+</body>
+</html>
